@@ -43,12 +43,6 @@ func ForemanHostToInstanceState(obj api.ForemanHost) *terraform.InstanceState {
 	if obj.EnvironmentId != nil {
 		attr["environment_id"] = strconv.Itoa(*obj.EnvironmentId)
 	}
-	if obj.LocationName != nil {
-		attr["location_name"] = strconv.Itoa(*obj.LocationName)
-	}
-	if obj.OrganizationName != nil {
-		attr["organization_name"] = strconv.Itoa(*obj.OrganizationName)
-	}
 	if obj.HostgroupId != nil {
 		attr["hostgroup_id"] = strconv.Itoa(*obj.HostgroupId)
 	}
@@ -140,8 +134,6 @@ func RandForemanHost() api.ForemanHost {
 	domainId := rand.Intn(100)
 	hostgroupId := rand.Intn(100)
 	environmentId := rand.Intn(100)
-	locationName := rand.Intn(100)
-	organizationName := rand.Intn(100)
 	mediumId := rand.Intn(100)
 	imageId := rand.Intn(100)
 	ownerId := rand.Intn(100)
@@ -150,8 +142,6 @@ func RandForemanHost() api.ForemanHost {
 	obj.DomainId = &domainId
 	obj.HostgroupId = &hostgroupId
 	obj.EnvironmentId = &environmentId
-	obj.LocationName = &locationName
-	obj.OrganizationName = &organizationName
 	obj.MediumId = &mediumId
 	obj.ImageId = &imageId
 	obj.OwnerId = &ownerId
