@@ -78,6 +78,10 @@ type ForemanHost struct {
 	// ID of the environment to assign the host
 	EnvironmentId *int `json:"environment_id,omitempty"`
 	// ID of the hostgroup to assign the host
+	LocationName *int `json:"location_name,omitempty"`
+	// ID of the hostgroup to assign the host
+	OrganizationName *int `json:"organization_name,omitempty"`
+	// ID of the hostgroup to assign the host
 	HostgroupId *int `json:"hostgroup_id,omitempty"`
 	// ID of the architecture of this host
 	ArchitectureId *int `json:"architecture_id,omitempty"`

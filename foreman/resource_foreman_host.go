@@ -203,6 +203,20 @@ func resourceForemanHostV0() *schema.Resource {
 				ValidateFunc: validation.IntAtLeast(0),
 				Description:  "ID of the environment to assign to the host.",
 			},
+			"location_name": {
+				Type:         schema.TypeInt,
+				Optional:     true,
+				Computed:     true,
+				ValidateFunc: validation.IntAtLeast(0),
+				Description:  "NAME of the location to assign to the host.",
+			},
+			"organization_name": {
+				Type:         schema.TypeInt,
+				Optional:     true,
+				Computed:     true,
+				ValidateFunc: validation.IntAtLeast(0),
+				Description:  "NAME of the organization to assign to the host.",
+			},
 			"operatingsystem_id": {
 				Type:         schema.TypeInt,
 				Optional:     true,
@@ -523,6 +537,22 @@ func resourceForemanHost() *schema.Resource {
 				Description:  "ID of the environment to assign to the host.",
 			},
 
+			"location_name": {
+				Type:         schema.TypeInt,
+				Optional:     true,
+				Computed:     true,
+				ValidateFunc: validation.IntAtLeast(0),
+				Description:  "NAME of the location to assign to the host.",
+			},
+
+			"organization_name": {
+				Type:         schema.TypeInt,
+				Optional:     true,
+				Computed:     true,
+				ValidateFunc: validation.IntAtLeast(0),
+				Description:  "NAME of the organization to assign to the host.",
+			},
+
 			"architecture_id": {
 				Type:         schema.TypeInt,
 				Optional:     true,
@@ -831,6 +861,14 @@ func buildForemanHost(d *schema.ResourceData) *api.ForemanHost {
 	if environmentId != 0 {
 		host.EnvironmentId = &environmentId
 	}
+	locationName := d.Get("location_name").(int)
+	if locationName != 0 {
+		host.LocationName = &locationName
+	}
+	organizationName := d.Get("organization_name").(int)
+	if organizationName != 0 {
+		host.OrganizationName = &organizationName
+	}
 	hostgroupId := d.Get("hostgroup_id").(int)
 	if hostgroupId != 0 {
 		host.HostgroupId = &hostgroupId
@@ -1083,6 +1121,8 @@ func setResourceDataFromForemanHost(d *schema.ResourceData, fh *api.ForemanHost)
 	d.Set("domain_id", fh.DomainId)
 	d.Set("domain_name", fh.DomainName)
 	d.Set("environment_id", fh.EnvironmentId)
+	d.Set("location_name", fh.LocationName)
+	d.Set("organization_name", fh.OrganizationName)
 	d.Set("owner_id", fh.OwnerId)
 	d.Set("owner_type", fh.OwnerType)
 	d.Set("hostgroup_id", fh.HostgroupId)
@@ -1359,6 +1399,8 @@ func resourceForemanHostUpdate(ctx context.Context, d *schema.ResourceData, meta
 		d.HasChange("compute_attributes") ||
 		d.HasChange("domain_id") ||
 		d.HasChange("environment_id") ||
+		d.HasChange("location_name") ||
+		d.HasChange("organization_name") ||
 		d.HasChange("owner_id") ||
 		d.HasChange("owner_type") ||
 		d.HasChange("hostgroup_id") ||
