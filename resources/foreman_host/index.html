@@ -1,0 +1,338 @@
+<!DOCTYPE html>
+<html class="writer-html5" lang="en" >
+<head>
+    <meta charset="utf-8" />
+    <meta http-equiv="X-UA-Compatible" content="IE=edge" />
+    <meta name="viewport" content="width=device-width, initial-scale=1.0" /><meta name="author" content="HanseMerkur Cloud Platform" /><link rel="canonical" href="https://github.com/terraform-coop/terraform-provider-foreman/resources/foreman_host/" />
+      <link rel="shortcut icon" href="../../img/favicon.ico" />
+    <title>foreman_host - Terraform Provider Foreman</title>
+    <link rel="stylesheet" href="../../css/theme.css" />
+    <link rel="stylesheet" href="../../css/theme_extra.css" />
+        <link rel="stylesheet" href="https://cdnjs.cloudflare.com/ajax/libs/highlight.js/11.8.0/styles/github.min.css" />
+    
+      <script>
+        // Current page data
+        var mkdocs_page_name = "foreman_host";
+        var mkdocs_page_input_path = "resources/foreman_host.md";
+        var mkdocs_page_url = "/terraform-coop/terraform-provider-foreman/resources/foreman_host/";
+      </script>
+    
+    <!--[if lt IE 9]>
+      <script src="../../js/html5shiv.min.js"></script>
+    <![endif]-->
+      <script src="https://cdnjs.cloudflare.com/ajax/libs/highlight.js/11.8.0/highlight.min.js"></script>
+      <script>hljs.highlightAll();</script> 
+</head>
+
+<body class="wy-body-for-nav" role="document">
+
+  <div class="wy-grid-for-nav">
+    <nav data-toggle="wy-nav-shift" class="wy-nav-side stickynav">
+    <div class="wy-side-scroll">
+      <div class="wy-side-nav-search">
+          <a href="../.." class="icon icon-home"> Terraform Provider Foreman
+        </a><div role="search">
+  <form id ="rtd-search-form" class="wy-form" action="../../search.html" method="get">
+      <input type="text" name="q" placeholder="Search docs" aria-label="Search docs" title="Type search term here" />
+  </form>
+</div>
+      </div>
+
+      <div class="wy-menu wy-menu-vertical" data-spy="affix" role="navigation" aria-label="Navigation menu">
+              <ul>
+                <li class="toctree-l1"><a class="reference internal" href="../..">Home</a>
+                </li>
+              </ul>
+              <p class="caption"><span class="caption-text">Data Sources</span></p>
+              <ul>
+                  <li class="toctree-l1"><a class="reference internal" href="../../data-sources/foreman_architecture/">foreman_architecture</a>
+                  </li>
+                  <li class="toctree-l1"><a class="reference internal" href="../../data-sources/foreman_computeprofile/">foreman_computeprofile</a>
+                  </li>
+                  <li class="toctree-l1"><a class="reference internal" href="../../data-sources/foreman_computeresource/">foreman_computeresource</a>
+                  </li>
+                  <li class="toctree-l1"><a class="reference internal" href="../../data-sources/foreman_defaulttemplate/">foreman_defaulttemplate</a>
+                  </li>
+                  <li class="toctree-l1"><a class="reference internal" href="../../data-sources/foreman_domain/">foreman_domain</a>
+                  </li>
+                  <li class="toctree-l1"><a class="reference internal" href="../../data-sources/foreman_environment/">foreman_environment</a>
+                  </li>
+                  <li class="toctree-l1"><a class="reference internal" href="../../data-sources/foreman_global_parameter/">foreman_global_parameter</a>
+                  </li>
+                  <li class="toctree-l1"><a class="reference internal" href="../../data-sources/foreman_hostgroup/">foreman_hostgroup</a>
+                  </li>
+                  <li class="toctree-l1"><a class="reference internal" href="../../data-sources/foreman_httpproxy/">foreman_httpproxy</a>
+                  </li>
+                  <li class="toctree-l1"><a class="reference internal" href="../../data-sources/foreman_image/">foreman_image</a>
+                  </li>
+                  <li class="toctree-l1"><a class="reference internal" href="../../data-sources/foreman_jobtemplate/">foreman_jobtemplate</a>
+                  </li>
+                  <li class="toctree-l1"><a class="reference internal" href="../../data-sources/foreman_katello_content_credential/">foreman_katello_content_credential</a>
+                  </li>
+                  <li class="toctree-l1"><a class="reference internal" href="../../data-sources/foreman_katello_content_view/">foreman_katello_content_view</a>
+                  </li>
+                  <li class="toctree-l1"><a class="reference internal" href="../../data-sources/foreman_katello_lifecycle_environment/">foreman_katello_lifecycle_environment</a>
+                  </li>
+                  <li class="toctree-l1"><a class="reference internal" href="../../data-sources/foreman_katello_product/">foreman_katello_product</a>
+                  </li>
+                  <li class="toctree-l1"><a class="reference internal" href="../../data-sources/foreman_katello_repository/">foreman_katello_repository</a>
+                  </li>
+                  <li class="toctree-l1"><a class="reference internal" href="../../data-sources/foreman_katello_sync_plan/">foreman_katello_sync_plan</a>
+                  </li>
+                  <li class="toctree-l1"><a class="reference internal" href="../../data-sources/foreman_media/">foreman_media</a>
+                  </li>
+                  <li class="toctree-l1"><a class="reference internal" href="../../data-sources/foreman_model/">foreman_model</a>
+                  </li>
+                  <li class="toctree-l1"><a class="reference internal" href="../../data-sources/foreman_operatingsystem/">foreman_operatingsystem</a>
+                  </li>
+                  <li class="toctree-l1"><a class="reference internal" href="../../data-sources/foreman_parameter/">foreman_parameter</a>
+                  </li>
+                  <li class="toctree-l1"><a class="reference internal" href="../../data-sources/foreman_partitiontable/">foreman_partitiontable</a>
+                  </li>
+                  <li class="toctree-l1"><a class="reference internal" href="../../data-sources/foreman_provisioningtemplate/">foreman_provisioningtemplate</a>
+                  </li>
+                  <li class="toctree-l1"><a class="reference internal" href="../../data-sources/foreman_puppetclass/">foreman_puppetclass</a>
+                  </li>
+                  <li class="toctree-l1"><a class="reference internal" href="../../data-sources/foreman_setting/">foreman_setting</a>
+                  </li>
+                  <li class="toctree-l1"><a class="reference internal" href="../../data-sources/foreman_smartclassparameter/">foreman_smartclassparameter</a>
+                  </li>
+                  <li class="toctree-l1"><a class="reference internal" href="../../data-sources/foreman_smartproxy/">foreman_smartproxy</a>
+                  </li>
+                  <li class="toctree-l1"><a class="reference internal" href="../../data-sources/foreman_subnet/">foreman_subnet</a>
+                  </li>
+                  <li class="toctree-l1"><a class="reference internal" href="../../data-sources/foreman_templateinput/">foreman_templateinput</a>
+                  </li>
+                  <li class="toctree-l1"><a class="reference internal" href="../../data-sources/foreman_templatekind/">foreman_templatekind</a>
+                  </li>
+                  <li class="toctree-l1"><a class="reference internal" href="../../data-sources/foreman_user/">foreman_user</a>
+                  </li>
+                  <li class="toctree-l1"><a class="reference internal" href="../../data-sources/foreman_usergroup/">foreman_usergroup</a>
+                  </li>
+              </ul>
+              <p class="caption"><span class="caption-text">Resources</span></p>
+              <ul class="current">
+                  <li class="toctree-l1"><a class="reference internal" href="../foreman_architecture/">foreman_architecture</a>
+                  </li>
+                  <li class="toctree-l1"><a class="reference internal" href="../foreman_computeprofile/">foreman_computeprofile</a>
+                  </li>
+                  <li class="toctree-l1"><a class="reference internal" href="../foreman_computeresource/">foreman_computeresource</a>
+                  </li>
+                  <li class="toctree-l1"><a class="reference internal" href="../foreman_defaulttemplate/">foreman_defaulttemplate</a>
+                  </li>
+                  <li class="toctree-l1"><a class="reference internal" href="../foreman_domain/">foreman_domain</a>
+                  </li>
+                  <li class="toctree-l1"><a class="reference internal" href="../foreman_environment/">foreman_environment</a>
+                  </li>
+                  <li class="toctree-l1"><a class="reference internal" href="../foreman_global_parameter/">foreman_global_parameter</a>
+                  </li>
+                  <li class="toctree-l1 current"><a class="reference internal current" href="#">foreman_host</a>
+    <ul class="current">
+    <li class="toctree-l2"><a class="reference internal" href="#example-usage">Example Usage</a>
+    </li>
+    <li class="toctree-l2"><a class="reference internal" href="#argument-reference">Argument Reference</a>
+    </li>
+    <li class="toctree-l2"><a class="reference internal" href="#attributes-reference">Attributes Reference</a>
+    </li>
+    </ul>
+                  </li>
+                  <li class="toctree-l1"><a class="reference internal" href="../foreman_hostgroup/">foreman_hostgroup</a>
+                  </li>
+                  <li class="toctree-l1"><a class="reference internal" href="../foreman_httpproxy/">foreman_httpproxy</a>
+                  </li>
+                  <li class="toctree-l1"><a class="reference internal" href="../foreman_image/">foreman_image</a>
+                  </li>
+                  <li class="toctree-l1"><a class="reference internal" href="../foreman_jobtemplate/">foreman_jobtemplate</a>
+                  </li>
+                  <li class="toctree-l1"><a class="reference internal" href="../foreman_katello_content_credential/">foreman_katello_content_credential</a>
+                  </li>
+                  <li class="toctree-l1"><a class="reference internal" href="../foreman_katello_content_view/">foreman_katello_content_view</a>
+                  </li>
+                  <li class="toctree-l1"><a class="reference internal" href="../foreman_katello_lifecycle_environment/">foreman_katello_lifecycle_environment</a>
+                  </li>
+                  <li class="toctree-l1"><a class="reference internal" href="../foreman_katello_product/">foreman_katello_product</a>
+                  </li>
+                  <li class="toctree-l1"><a class="reference internal" href="../foreman_katello_repository/">foreman_katello_repository</a>
+                  </li>
+                  <li class="toctree-l1"><a class="reference internal" href="../foreman_katello_sync_plan/">foreman_katello_sync_plan</a>
+                  </li>
+                  <li class="toctree-l1"><a class="reference internal" href="../foreman_media/">foreman_media</a>
+                  </li>
+                  <li class="toctree-l1"><a class="reference internal" href="../foreman_model/">foreman_model</a>
+                  </li>
+                  <li class="toctree-l1"><a class="reference internal" href="../foreman_operatingsystem/">foreman_operatingsystem</a>
+                  </li>
+                  <li class="toctree-l1"><a class="reference internal" href="../foreman_override_value/">foreman_override_value</a>
+                  </li>
+                  <li class="toctree-l1"><a class="reference internal" href="../foreman_parameter/">foreman_parameter</a>
+                  </li>
+                  <li class="toctree-l1"><a class="reference internal" href="../foreman_partitiontable/">foreman_partitiontable</a>
+                  </li>
+                  <li class="toctree-l1"><a class="reference internal" href="../foreman_provisioningtemplate/">foreman_provisioningtemplate</a>
+                  </li>
+                  <li class="toctree-l1"><a class="reference internal" href="../foreman_smartproxy/">foreman_smartproxy</a>
+                  </li>
+                  <li class="toctree-l1"><a class="reference internal" href="../foreman_subnet/">foreman_subnet</a>
+                  </li>
+                  <li class="toctree-l1"><a class="reference internal" href="../foreman_templateinput/">foreman_templateinput</a>
+                  </li>
+                  <li class="toctree-l1"><a class="reference internal" href="../foreman_user/">foreman_user</a>
+                  </li>
+                  <li class="toctree-l1"><a class="reference internal" href="../foreman_usergroup/">foreman_usergroup</a>
+                  </li>
+              </ul>
+      </div>
+    </div>
+    </nav>
+
+    <section data-toggle="wy-nav-shift" class="wy-nav-content-wrap">
+      <nav class="wy-nav-top" role="navigation" aria-label="Mobile navigation menu">
+          <i data-toggle="wy-nav-top" class="fa fa-bars"></i>
+          <a href="../..">Terraform Provider Foreman</a>
+        
+      </nav>
+      <div class="wy-nav-content">
+        <div class="rst-content"><div role="navigation" aria-label="breadcrumbs navigation">
+  <ul class="wy-breadcrumbs">
+    <li><a href="../.." class="icon icon-home" aria-label="Docs"></a></li>
+          <li class="breadcrumb-item">Resources</li>
+      <li class="breadcrumb-item active">foreman_host</li>
+    <li class="wy-breadcrumbs-aside">
+          <a href="https://github.com/terraform-coop/terraform-provider-foreman/edit/master/docs/resources/foreman_host.md">Edit on terraform-provider-foreman</a>
+    </li>
+  </ul>
+  <hr/>
+</div>
+          <div role="main" class="document" itemscope="itemscope" itemtype="http://schema.org/Article">
+            <div class="section" itemprop="articleBody">
+              
+                <h1 id="foreman_host">foreman_host<a class="headerlink" href="#foreman_host" title="Permanent link">&para;</a></h1>
+<p>A host managed by Foreman.</p>
+<h2 id="example-usage">Example Usage<a class="headerlink" href="#example-usage" title="Permanent link">&para;</a></h2>
+<pre class="codehilite"><code># Autogenerated example with required keys
+resource &quot;foreman_host&quot; &quot;example&quot; {
+}
+</code></pre>
+
+<h2 id="argument-reference">Argument Reference<a class="headerlink" href="#argument-reference" title="Permanent link">&para;</a></h2>
+<p>The following arguments are supported:</p>
+<ul>
+<li><code>architecture_id</code> - (Optional) ID of the architecture of this host</li>
+<li><code>bmc_success</code> - (Optional) REMOVED - Tracks the partial state of BMC operations on host creation. If these operations fail, the host will be created in Foreman and this boolean will remain <code>false</code>. On the next <code>terraform apply</code> will trigger the host update to pick back up with the BMC operations.</li>
+<li><code>comment</code> - (Optional) Add additional information about this host.Note: Changes to this attribute will trigger a host rebuild.</li>
+<li><code>compute_attributes</code> - (Optional) Hypervisor specific VM options. Must be a JSON string, as every compute provider has different attributes schema</li>
+<li><code>compute_profile_id</code> - (Optional) </li>
+<li><code>compute_resource_id</code> - (Optional, Force New) </li>
+<li><code>config_group_ids</code> - (Optional) IDs of the applied config groups.</li>
+<li><code>domain_id</code> - (Optional, Force New) ID of the domain to assign to the host.</li>
+<li><code>enable_bmc</code> - (Optional) Enables PMI/BMC functionality. On create and update calls, having this enabled will force a host to poweroff, set next boot to PXE and power on. Defaults to <code>false</code>.</li>
+<li><code>environment_id</code> - (Optional) ID of the environment to assign to the host.</li>
+<li><code>hostgroup_id</code> - (Optional, Force New) ID of the hostgroup to assign to the host.</li>
+<li><code>image_id</code> - (Optional, Force New) ID of an image to be used as base for this host when cloning</li>
+<li><code>interfaces_attributes</code> - (Optional) Host interface information.</li>
+<li><code>manage_power_operations</code> - (Optional) Manage power operations, e.g. power on, if host's build flag will be enabled.</li>
+<li><code>managed</code> - (Optional) Whether or not this host is managed by Foreman. Create host only, don't set build status or manage power states.</li>
+<li><code>medium_id</code> - (Optional, Force New) ID of the medium mounted on the host.</li>
+<li><code>model_id</code> - (Optional) ID of the hardware model if applicable</li>
+<li><code>name</code> - (Optional, Force New) Name of this host as stored in Foreman. Can be short name or FQDN, depending on your Foreman settings (especially the setting 'append_domain_name_for_hosts').</li>
+<li><code>operatingsystem_id</code> - (Optional, Force New) ID of the operating system to put on the host.</li>
+<li><code>owner_id</code> - (Optional) ID of the user or usergroup that owns the host.</li>
+<li><code>owner_type</code> - (Optional) Owner of the host, must be either User ot Usergroup</li>
+<li><code>parameters</code> - (Optional) A map of parameters that will be saved as host parameters in the machine config.</li>
+<li><code>provision_method</code> - (Optional, Force New) Sets the provision method in Foreman for this host: either network-based ('build') or image-based ('image')</li>
+<li><code>ptable_id</code> - (Optional) ID of the partition table the host should use</li>
+<li><code>puppet_class_ids</code> - (Optional) IDs of the applied puppet classes.</li>
+<li><code>retry_count</code> - (Optional) Number of times to retry on a failed attempt to register or delete a host in foreman.</li>
+<li><code>root_password</code> - (Optional) Default root password</li>
+<li><code>set_build_flag</code> - (Optional) Sets the Foreman-internal 'build' flag on this host - even if it is already built completely.</li>
+<li><code>shortname</code> - (Optional, Force New) The short name of this host. Example: when the FQDN is 'host01.example.org', then 'host01' is the short name.</li>
+<li><code>subnet_id</code> - (Optional) ID of the subnet the host should be placed in</li>
+</ul>
+<h2 id="attributes-reference">Attributes Reference<a class="headerlink" href="#attributes-reference" title="Permanent link">&para;</a></h2>
+<p>The following attributes are exported:</p>
+<ul>
+<li><code>architecture_id</code> - ID of the architecture of this host</li>
+<li><code>comment</code> - Add additional information about this host.Note: Changes to this attribute will trigger a host rebuild.</li>
+<li><code>compute_attributes</code> - Hypervisor specific VM options. Must be a JSON string, as every compute provider has different attributes schema</li>
+<li><code>compute_profile_id</code> - </li>
+<li><code>compute_resource_id</code> - </li>
+<li><code>config_group_ids</code> - IDs of the applied config groups.</li>
+<li><code>domain_id</code> - ID of the domain to assign to the host.</li>
+<li><code>domain_name</code> - The domain name of the host.</li>
+<li><code>enable_bmc</code> - Enables PMI/BMC functionality. On create and update calls, having this enabled will force a host to poweroff, set next boot to PXE and power on. Defaults to <code>false</code>.</li>
+<li><code>environment_id</code> - ID of the environment to assign to the host.</li>
+<li><code>fqdn</code> - Host fully qualified domain name. Read-only value to be used in variables.</li>
+<li><code>hostgroup_id</code> - ID of the hostgroup to assign to the host.</li>
+<li><code>image_id</code> - ID of an image to be used as base for this host when cloning</li>
+<li><code>interfaces_attributes</code> - Host interface information.</li>
+<li><code>manage_power_operations</code> - Manage power operations, e.g. power on, if host's build flag will be enabled.</li>
+<li><code>managed</code> - Whether or not this host is managed by Foreman. Create host only, don't set build status or manage power states.</li>
+<li><code>medium_id</code> - ID of the medium mounted on the host.</li>
+<li><code>model_id</code> - ID of the hardware model if applicable</li>
+<li><code>name</code> - Name of this host as stored in Foreman. Can be short name or FQDN, depending on your Foreman settings (especially the setting 'append_domain_name_for_hosts').</li>
+<li><code>operatingsystem_id</code> - ID of the operating system to put on the host.</li>
+<li><code>owner_id</code> - ID of the user or usergroup that owns the host.</li>
+<li><code>owner_type</code> - Owner of the host, must be either User ot Usergroup</li>
+<li><code>parameters</code> - A map of parameters that will be saved as host parameters in the machine config.</li>
+<li><code>provision_method</code> - Sets the provision method in Foreman for this host: either network-based ('build') or image-based ('image')</li>
+<li><code>ptable_id</code> - ID of the partition table the host should use</li>
+<li><code>puppet_class_ids</code> - IDs of the applied puppet classes.</li>
+<li><code>retry_count</code> - Number of times to retry on a failed attempt to register or delete a host in foreman.</li>
+<li><code>root_password</code> - Default root password</li>
+<li><code>set_build_flag</code> - Sets the Foreman-internal 'build' flag on this host - even if it is already built completely.</li>
+<li><code>shortname</code> - The short name of this host. Example: when the FQDN is 'host01.example.org', then 'host01' is the short name.</li>
+<li><code>subnet_id</code> - ID of the subnet the host should be placed in</li>
+<li><code>token</code> - Build token. Can be used to signal to Foreman that a host build is complete.</li>
+</ul>
+              
+            </div>
+          </div><footer>
+    <div class="rst-footer-buttons" role="navigation" aria-label="Footer Navigation">
+        <a href="../foreman_global_parameter/" class="btn btn-neutral float-left" title="foreman_global_parameter"><span class="icon icon-circle-arrow-left"></span> Previous</a>
+        <a href="../foreman_hostgroup/" class="btn btn-neutral float-right" title="foreman_hostgroup">Next <span class="icon icon-circle-arrow-right"></span></a>
+    </div>
+
+  <hr/>
+
+  <div role="contentinfo">
+    <!-- Copyright etc -->
+  </div>
+
+  Built with <a href="https://www.mkdocs.org/">MkDocs</a> using a <a href="https://github.com/readthedocs/sphinx_rtd_theme">theme</a> provided by <a href="https://readthedocs.org">Read the Docs</a>.
+</footer>
+          
+        </div>
+      </div>
+
+    </section>
+
+  </div>
+
+  <div class="rst-versions" role="note" aria-label="Versions">
+  <span class="rst-current-version" data-toggle="rst-current-version">
+    
+        <span>
+          <a href="https://github.com/terraform-coop/terraform-provider-foreman" class="fa fa-code-fork" style="color: #fcfcfc"> terraform-provider-foreman</a>
+        </span>
+    
+    
+      <span><a href="../foreman_global_parameter/" style="color: #fcfcfc">&laquo; Previous</a></span>
+    
+    
+      <span><a href="../foreman_hostgroup/" style="color: #fcfcfc">Next &raquo;</a></span>
+    
+  </span>
+</div>
+    <script src="../../js/jquery-3.6.0.min.js"></script>
+    <script>var base_url = "../..";</script>
+    <script src="../../js/theme_extra.js"></script>
+    <script src="../../js/theme.js"></script>
+      <script src="../../search/main.js"></script>
+    <script>
+        jQuery(function () {
+            SphinxRtdTheme.Navigation.enable(true);
+        });
+    </script>
+
+</body>
+</html>
