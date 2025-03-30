@@ -13,7 +13,7 @@ func Debug(format string, a ...interface{}) {
 
 func Debugf(format string, a ...interface{}) {
 	// Placeholder in branch feat/katello_lifecycleenvs, to be filled by PR #146
-	// https://github.com/github.com/masikrus/terraform-provider-foreman/terraform-provider-foreman/pull/146
+	// https://github.com/masikrus/terraform-provider-foreman/terraform-provider-foreman/pull/146
 }
 
 // Prints line and file and then exits with fatal error message

@@ -6,10 +6,10 @@ import (
 	"strconv"
 
 	"github.com/HanseMerkur/terraform-provider-utils/autodoc"
-	"github.com/github.com/masikrus/terraform-provider-foreman/terraform-provider-foreman/foreman/api"
-	"github.com/github.com/masikrus/terraform-provider-foreman/terraform-provider-foreman/foreman/utils"
 	"github.com/hashicorp/terraform-plugin-sdk/v2/diag"
 	"github.com/hashicorp/terraform-plugin-sdk/v2/helper/schema"
+	"github.com/masikrus/terraform-provider-foreman/terraform-provider-foreman/foreman/api"
+	"github.com/masikrus/terraform-provider-foreman/terraform-provider-foreman/foreman/utils"
 )
 
 func resourceForemanKatelloLifecycleEnvironment() *schema.Resource {

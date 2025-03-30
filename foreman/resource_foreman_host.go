@@ -12,8 +12,8 @@ import (
 	"github.com/HanseMerkur/terraform-provider-utils/autodoc"
 	"github.com/HanseMerkur/terraform-provider-utils/conv"
 	"github.com/HanseMerkur/terraform-provider-utils/log"
-	"github.com/github.com/masikrus/terraform-provider-foreman/terraform-provider-foreman/foreman/api"
 	"github.com/imdario/mergo"
+	"github.com/masikrus/terraform-provider-foreman/terraform-provider-foreman/foreman/api"
 
 	"github.com/hashicorp/go-cty/cty"
 	"github.com/hashicorp/terraform-plugin-sdk/v2/diag"
@@ -1177,7 +1177,7 @@ func setResourceDataFromForemanInterfacesAttributes(d *schema.ResourceData, fh *
 						"Original value %+v is of type %T", attrs, attrs))
 				}
 
-				// Error handling to catch https://github.com/github.com/masikrus/terraform-provider-foreman/terraform-provider-foreman/issues/160.
+				// Error handling to catch https://github.com/masikrus/terraform-provider-foreman/terraform-provider-foreman/issues/160.
 				// Check if "mac" exists as key
 				if _, ok := attrs_["mac"]; ok {
 					// If yes, be extra careful with conversion errors
