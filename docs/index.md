@@ -7,7 +7,7 @@ Foreman through the Foreman REST API.
 
 This project way previously developed, owned, and maintained by the SRE -
 Orchestration pod at Wayfair. Current development is happening at
-[Github](https://github.com/masikrus/terraform-provider-foreman/terraform-provider-foreman)
+[Github](https://github.com/masikrus/terraform-provider-foreman)
 
 ## What is Foreman?
 

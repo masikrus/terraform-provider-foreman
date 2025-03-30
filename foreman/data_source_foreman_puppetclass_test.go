@@ -7,7 +7,7 @@ import (
 
 	"github.com/hashicorp/terraform-plugin-sdk/v2/helper/schema"
 	"github.com/hashicorp/terraform-plugin-sdk/v2/terraform"
-	"github.com/masikrus/terraform-provider-foreman/terraform-provider-foreman/foreman/api"
+	"github.com/masikrus/terraform-provider-foreman/foreman/api"
 )
 
 // -----------------------------------------------------------------------------

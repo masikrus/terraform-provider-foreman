@@ -13,7 +13,7 @@ import (
 
 	"github.com/HanseMerkur/terraform-provider-utils/log"
 	"github.com/dpotapov/go-spnego"
-	"github.com/masikrus/terraform-provider-foreman/terraform-provider-foreman/foreman/utils"
+	"github.com/masikrus/terraform-provider-foreman/foreman/utils"
 
 	cleanhttp "github.com/hashicorp/go-cleanhttp"
 	"github.com/hashicorp/terraform-plugin-sdk/v2/helper/schema"
