@@ -3,7 +3,6 @@ package foreman
 import (
 	"context"
 	"encoding/json"
-	"github.com/HanseMerkur/terraform-provider-utils/log"
 	"io"
 	"math/rand"
 	"net/http"
@@ -14,8 +13,10 @@ import (
 	"strings"
 	"testing"
 
+	"github.com/HanseMerkur/terraform-provider-utils/log"
+
 	tfrand "github.com/HanseMerkur/terraform-provider-utils/rand"
-	"github.com/terraform-coop/terraform-provider-foreman/foreman/api"
+	"github.com/github.com/masikrus/terraform-provider-foreman/terraform-provider-foreman/foreman/api"
 
 	"github.com/hashicorp/terraform-plugin-sdk/v2/diag"
 	"github.com/hashicorp/terraform-plugin-sdk/v2/helper/schema"

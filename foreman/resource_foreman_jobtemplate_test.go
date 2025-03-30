@@ -2,14 +2,15 @@ package foreman
 
 import (
 	"encoding/json"
-	"github.com/hashicorp/terraform-plugin-sdk/v2/helper/schema"
-	"github.com/hashicorp/terraform-plugin-sdk/v2/terraform"
-	"github.com/terraform-coop/terraform-provider-foreman/foreman/api"
 	"math/rand"
 	"net/http"
 	"reflect"
 	"strconv"
 	"testing"
+
+	"github.com/github.com/masikrus/terraform-provider-foreman/terraform-provider-foreman/foreman/api"
+	"github.com/hashicorp/terraform-plugin-sdk/v2/helper/schema"
+	"github.com/hashicorp/terraform-plugin-sdk/v2/terraform"
 )
 
 const JobTemplatesURI = api.FOREMAN_API_URL_PREFIX + "/job_templates"

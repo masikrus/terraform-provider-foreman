@@ -4,7 +4,7 @@ Terraform provider to interact with [Foreman](https://www.theforeman.org/)
 and, partly, [Katello](https://theforeman.org/plugins/katello/).
 
 Use the provider from the official **Terraform registry**:
-[registry.terraform.io/providers/terraform-coop/foreman](https://registry.terraform.io/providers/terraform-coop/foreman/latest).
+[registry.terraform.io/providers/github.com/masikrus/terraform-provider-foreman/foreman](https://registry.terraform.io/providers/github.com/masikrus/terraform-provider-foreman/foreman/latest).
 
 This is a fork of the project previously developed, owned, and maintained by
 the SRE - Orchestration pod at Wayfair.
@@ -20,7 +20,7 @@ See the examples for more information.
 Starting with `v0.6.0` some (breaking) changes require an update of Terraform manifests.
 
 * The host `build` argument was removed (`0.6.0`) and is replaced by `set_build_flag`. (`0.6.1`)
-  * The reason behind this change is complex and was thoroughly discussed in https://github.com/terraform-coop/terraform-provider-foreman/discussions/125
+  * The reason behind this change is complex and was thoroughly discussed in https://github.com/github.com/masikrus/terraform-provider-foreman/terraform-provider-foreman/discussions/125
   * Using the argument does one thing: it tells Foreman to set the `build` flag for a host. It defaults to `false`, setting it to `true` causes the host to be re-installed on next boot (network-based installation).
 * The `method` argument is re-introduced as `provision_method`. It can be either `build` (network-based) or `image` (image-based).
   * Both options require different additional arguments, e.g the image to be used. See `examples/host/`.
@@ -65,7 +65,7 @@ section:
 1. Clone the repository with `ssh`:
 
     ```sh
-    $ go get -u github.com:terraform-coop/terraform-provider-foreman
+    $ go get -u github.com:github.com/masikrus/terraform-provider-foreman/terraform-provider-foreman
     ```
 
 2. Enter the root directory of the project and install the provider:
@@ -110,7 +110,7 @@ section:
 ## Documentation
 
 The rendered documentation is available at
-[terraform-coop.github.io/terraform-provider-foreman](https://terraform-coop.github.io/terraform-provider-foreman/).
+[github.com/masikrus/terraform-provider-foreman.github.io/terraform-provider-foreman](https://github.com/masikrus/terraform-provider-foreman.github.io/terraform-provider-foreman/).
 
 This repository uses [`mkdocs`](https://www.mkdocs.org/) for documentation.
 Follow the installation instructions on

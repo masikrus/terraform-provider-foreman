@@ -7,7 +7,7 @@ import (
 	"os"
 
 	logger "github.com/HanseMerkur/terraform-provider-utils/log"
-	"github.com/terraform-coop/terraform-provider-foreman/foreman/api"
+	"github.com/github.com/masikrus/terraform-provider-foreman/terraform-provider-foreman/foreman/api"
 
 	"github.com/hashicorp/terraform-plugin-sdk/v2/diag"
 	"github.com/hashicorp/terraform-plugin-sdk/v2/helper/schema"

@@ -5,8 +5,9 @@ import (
 	"context"
 	"encoding/json"
 	"fmt"
-	"github.com/terraform-coop/terraform-provider-foreman/foreman/utils"
 	"net/http"
+
+	"github.com/github.com/masikrus/terraform-provider-foreman/terraform-provider-foreman/foreman/utils"
 )
 
 const (

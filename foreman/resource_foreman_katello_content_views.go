@@ -3,14 +3,15 @@ package foreman
 import (
 	"context"
 	"fmt"
+	"slices"
+	"strconv"
+
 	"github.com/HanseMerkur/terraform-provider-utils/autodoc"
+	"github.com/github.com/masikrus/terraform-provider-foreman/terraform-provider-foreman/foreman/api"
+	"github.com/github.com/masikrus/terraform-provider-foreman/terraform-provider-foreman/foreman/utils"
 	"github.com/hashicorp/terraform-plugin-sdk/v2/diag"
 	"github.com/hashicorp/terraform-plugin-sdk/v2/helper/schema"
 	"github.com/hashicorp/terraform-plugin-sdk/v2/helper/validation"
-	"github.com/terraform-coop/terraform-provider-foreman/foreman/api"
-	"github.com/terraform-coop/terraform-provider-foreman/foreman/utils"
-	"slices"
-	"strconv"
 )
 
 func resourceForemanKatelloContentView() *schema.Resource {

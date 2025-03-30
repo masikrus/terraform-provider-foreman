@@ -1,4 +1,4 @@
-module github.com/terraform-coop/terraform-provider-foreman
+module github.com/masikrus/terraform-provider-foreman
 
 go 1.18
 
