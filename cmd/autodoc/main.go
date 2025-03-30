@@ -11,7 +11,7 @@ import (
 	"os"
 
 	"github.com/HanseMerkur/terraform-provider-utils/autodoc"
-	"github.com/terraform-coop/terraform-provider-foreman/foreman"
+	"github.com/masikrus/terraform-provider-foreman/foreman"
 )
 
 func main() {
